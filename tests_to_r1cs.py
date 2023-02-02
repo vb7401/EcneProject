@@ -7,7 +7,6 @@ all_files = filter(lambda x: x.endswith(".circom"), all_files)
 
 chdir("ecne_circomlib_tests")
 
-
 for i in all_files:
     print(i)
     subprocess.run(["circom", i, "--r1cs", "--O0"])
